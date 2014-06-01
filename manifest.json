@@ -11,15 +11,15 @@
   "content_scripts": [
     {
       "matches": [
-        "https://stackoverflow.com/*",
-        "https://*.stackoverflow.com/*",
-        "https://stackexchange.com/*",
-        "https://*.stackexchange.com/*",
-        "https://serverfault.com/*",
-        "https://superuser.com/*",
-        "https://askubuntu.com/*",
-        "https://stackapps.com/*",
-        "https://mathoverflow.net/*"
+        "*://stackoverflow.com/*",
+        "*://*.stackoverflow.com/*",
+        "*://stackexchange.com/*",
+        "*://*.stackexchange.com/*",
+        "*://serverfault.com/*",
+        "*://superuser.com/*",
+        "*://askubuntu.com/*",
+        "*://stackapps.com/*",
+        "*://mathoverflow.net/*"
       ],
       "js": [
         "scripts/contentscript.js"
