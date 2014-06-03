@@ -13,3 +13,9 @@ if ( document.getElementById('hot-network-questions') !== null ){
     var buzzfeed = document.getElementById('hot-network-questions');
     buzzfeed.remove();
 }
+
+// Block the chat box
+if ( document.getElementById('chat-feature') !== null ){
+    var chatty = document.getElementById('chat-feature');
+    chatty.remove();
+}
