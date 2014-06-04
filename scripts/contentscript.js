@@ -19,3 +19,11 @@ if ( document.getElementById('chat-feature') !== null ){
     var chatty = document.getElementById('chat-feature');
     chatty.remove();
 }
+
+// Take out the newsletter ad
+// Inbox zero for life!
+if ( document.getElementById('newsletter-ad') !== null ){
+   var adMan = document.getElementById('newsletter-ad');
+   adMan.remove();
+}
+
