@@ -27,3 +27,12 @@ if ( document.getElementById('newsletter-ad') !== null ){
    adMan.remove();
 }
 
+// Block the ads for Stack Overflow careers, despite the
+// fact it got me my last job
+// #commentasconfession
+if ( document.getElementsByClassName('everyonelovesstackoverflow') !== null ){
+   var recruiters = document.getElementsByClassName('everyonelovesstackoverflow');
+   Array.prototype.forEach.call(recruiters, function(recruiters){
+    recruiters.remove();
+   });
+}
