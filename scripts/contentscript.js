@@ -31,8 +31,13 @@ if ( document.getElementById('newsletter-ad') !== null ){
 // fact it got me my last job
 // #commentasconfession
 if ( document.getElementsByClassName('everyonelovesstackoverflow') !== null ){
-   var recruiters = document.getElementsByClassName('everyonelovesstackoverflow');
-   Array.prototype.forEach.call(recruiters, function(recruiters){
-    recruiters.remove();
-   });
+  var recruiters = document.getElementsByClassName('everyonelovesstackoverflow');
+  for (var i = recruiters.length - 1; 0 <= i; i--){
+    recruiters[i].remove();
+  }
+}
+
+if ( document.getElementById('hireme') !== null ){
+  var hire = document.getElementById('hireme');
+  hire.remove();
 }
