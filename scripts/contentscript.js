@@ -1,43 +1,39 @@
 'use strict';
 
-// Block the community bulletin block
-if ( document.getElementsByClassName('community-bulletin').length > 0 ){
-    var commieBulletin = document.getElementsByClassName('community-bulletin')[0];
-    commieBulletin.remove();
-}
+var classes = [
+                'community-bulletin',         // Block the community bulletin block.
+                'everyonelovesstackoverflow'  // Block the ads for Stack Overflow
+                                              // Careers, despite the fact it got me
+                                              // my last job.
+                                              // #commentasconfession
+              ];
 
-// Block the hot network questions linkbait
-// I probably find these so distracting because I am weak of mind 
-// #commentasconfession
-if ( document.getElementById('hot-network-questions') !== null ){
-    var buzzfeed = document.getElementById('hot-network-questions');
-    buzzfeed.remove();
-}
+var ids = [
+            'hot-network-questions',  // Block the hot network questions linkbait --
+                                      // I probably find these so distracting
+                                      // because I am weak of mind.
+                                      // #commentasconfession
+            'chat-feature',           // Block the chat box.
+            'newsletter-ad',          // Take out the newsletter ad --
+                                      // Inbox zero for life!
+            'hireme'                  // Block the ads for Stack Overflow
+                                      // Careers, despite the fact it got me
+                                      // my last job.
+                                      // #commentasconfession
+          ];
 
-// Block the chat box
-if ( document.getElementById('chat-feature') !== null ){
-    var chatty = document.getElementById('chat-feature');
-    chatty.remove();
-}
+classes.forEach(function(aClass){
+  if ( document.getElementsByClassName(aClass) !== null ){
+    var aClasses = document.getElementsByClassName(aClass);
+    for ( var i = aClasses.length - 1; 0 <= i; i-- ){
+      aClasses[i].remove();
+    }
+  }  
+});
 
-// Take out the newsletter ad
-// Inbox zero for life!
-if ( document.getElementById('newsletter-ad') !== null ){
-   var adMan = document.getElementById('newsletter-ad');
-   adMan.remove();
-}
-
-// Block the ads for Stack Overflow careers, despite the
-// fact it got me my last job
-// #commentasconfession
-if ( document.getElementsByClassName('everyonelovesstackoverflow') !== null ){
-  var recruiters = document.getElementsByClassName('everyonelovesstackoverflow');
-  for (var i = recruiters.length - 1; 0 <= i; i--){
-    recruiters[i].remove();
+ids.forEach(function(anId){
+  if ( document.getElementById(anId) !== null ){
+      var thisId = document.getElementById(anId);
+      thisId.remove();
   }
-}
-
-if ( document.getElementById('hireme') !== null ){
-  var hire = document.getElementById('hireme');
-  hire.remove();
-}
+});
