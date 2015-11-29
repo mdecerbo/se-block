@@ -21,7 +21,8 @@
         "*://superuser.com/*",
         "*://askubuntu.com/*",
         "*://stackapps.com/*",
-        "*://mathoverflow.net/*"
+        "*://mathoverflow.net/*",
+        "*://lodash.com/docs"
       ],
       "js": [
         "scripts/contentscript.js"
@@ -40,6 +41,7 @@
     "*://superuser.com/*",
     "*://askubuntu.com/*",
     "*://stackapps.com/*",
-    "*://mathoverflow.net/*"
+    "*://mathoverflow.net/*",
+    "*://lodash.com/docs"
   ]
 }
