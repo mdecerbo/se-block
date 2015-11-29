@@ -16,10 +16,11 @@ var ids = [
             'chat-feature',           // Block the chat box.
             'newsletter-ad',          // Take out the newsletter ad --
                                       // Inbox zero for life!
-            'hireme'                  // Block the ads for Stack Overflow
+            'hireme',                 // Block the ads for Stack Overflow
                                       // Careers, despite the fact it got me
                                       // my last job.
                                       // #commentasconfession
+            'carbonads'               // That one ad in the lodash docs
           ];
 
 classes.forEach(function(aClass){
@@ -28,7 +29,7 @@ classes.forEach(function(aClass){
     for ( var i = aClasses.length - 1; 0 <= i; i-- ){
       aClasses[i].remove();
     }
-  }  
+  }
 });
 
 ids.forEach(function(anId){
