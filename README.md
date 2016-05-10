@@ -3,7 +3,7 @@
 
 ![SE Block logo](https://raw.githubusercontent.com/chrisbodhi/se-block/master/images/icon-128.png)
 
-This is a Google Chrome extension that cleans up some of the cruft from the otherwise excellent Stack Exchange pages. 
+This is a Google Chrome extension that cleans up some of the cruft from the otherwise excellent Stack Exchange pages. [Get it from the Chrome Store here](https://chrome.google.com/webstore/detail/se-block/ffpkepieaocfchmcokenleighplnifjh)!
 
 The idea for the extension came about as I started my first job as a web developer and, subsequently, came to spend more and more of my day scanning Stack Overflow, Server Fault, Ask Ubuntu, &amp;c. I became increasingly distracted by the sidebar links, which may have had to do with all of the coffee I drink. 
 
