@@ -1,6 +1,7 @@
 'use strict';
 
 var classes = [
+                's-sidebarwidget',            // Block Overflow Blog and Hot Meta Posts
                 'community-bulletin',         // Block the community bulletin block.
                 'everyonelovesstackoverflow'  // Block the ads for Stack Overflow
                                               // Careers, despite the fact it got me
